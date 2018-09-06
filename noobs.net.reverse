@@ -1,0 +1,14 @@
+$TTL	3600
+@ 	IN 	SOA	srv1.noobs.net. root.noobs.net. (
+ 			2016071901           ; Serial
+ 			3600                 ; Refresh [1h]
+			600                  ; Retry   [10m]
+			86400                ; Expire  [1d]
+			600 )                ; Negative Cache TTL [1h]
+;
+@       	IN      NS      srv1.noobs.net.
+@		IN	PTR	noobs.net.
+
+centos	        IN 	A	192.168.1.127
+1       	IN      PTR     srv1.noobs.net.
+2       	IN      PTR     srv2.noobs.net.
